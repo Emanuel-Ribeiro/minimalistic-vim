@@ -2,7 +2,8 @@ return {
   "ellisonleao/gruvbox.nvim",
   priority = 1000,
   config = function()
-    vim.o.background = "light" -- ou "dark" para modo escuro
+    -- vim.o.background = "light" -- ou "dark" para modo escuro
+    vim.o.background = "dark"
 
     -- Ativando o esquema de cores Gruvbox
     vim.cmd([[colorscheme gruvbox]])
