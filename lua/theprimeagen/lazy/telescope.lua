@@ -8,7 +8,18 @@ return {
     },
 
     config = function()
-        require('telescope').setup({})
+        require('telescope').setup({
+          defaults = {
+            layout_strategy = "vertical",
+            layout_config = {
+              vertical = {
+                -- Adjust these settings as desired:
+                preview_height = 0.5,  -- controls the height of the preview window
+                mirror = false,        -- if true, swaps the positions of the results and preview windows
+              },
+            },
+          },
+        })
 
         local builtin = require('telescope.builtin')
         vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
