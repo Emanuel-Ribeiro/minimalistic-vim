@@ -178,5 +178,6 @@ alias 5.='cd ../../../../../'
 alias vz='nvim ~/.zshrc'
 alias vn='cd ~/.config/nvim && nvim .'
 alias vi='cd ~/flat/infrastructure-as-code && nvim .'
+alias sb='cd ~/second-brain && nvim .'
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
