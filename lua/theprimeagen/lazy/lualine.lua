@@ -3,7 +3,12 @@ return {
   config = function()
     require('lualine').setup({
       options = {
-        theme = 'gruvbox'
+        theme = 'gruvbox',
+        component_separators = "|",
+        section_separators = '',
+      },
+      sections = {
+        lualine_c = {{ 'filename', path = 1 }}, -- 2 -> absolute path
       }
     })
   end
